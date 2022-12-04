@@ -5,7 +5,7 @@
 
     <script>
 
-      $(function(){
+      $.(function(){
 
         var pokemon = [];
 
@@ -13,7 +13,7 @@
           $.each(data.Pokemon, function(i,f){
             var tblRow = "<tr>" + "<td>" + f.name + "</td>" +
               "<td>" + f.type1 + "</td>" +   "<td>" + f.type2 + "</td>" +  "</tr>"
-              $(tblRow).appendTo("#userdata tbody");
+              $.(tblRow).appendTo("#userdata tbody");
           });
         });
       });
