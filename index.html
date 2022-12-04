@@ -1,0 +1,45 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+    <script>
+
+      $(function(){
+
+        var pokemon = [];
+
+        $.getJSON('pkmn.json', function(data){
+          $.each(data.Pokemon, function(i,f){
+            var tblRow = "<tr>" + "<td>" + f.name + "</td>" +
+              "<td>" + f.type1 + "</td>" +   "<td>" + f.type2 + "</td>" +  "</tr>"
+              $(tblRow).appendTo("#userdata tbody");
+          });
+        });
+      });
+
+
+    </script>
+
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="wrapper">
+<div class="profile">
+   <table id= "userdata" border="2">
+  <thead>
+            <th>Name</th>
+            <th>Type1</th>
+            <th>Type2</th>
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+
+</div>
+</div>
+  </body>
+</html>

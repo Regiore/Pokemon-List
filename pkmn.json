@@ -1,0 +1,16 @@
+{
+  "Pokemon": [
+
+    {
+      "name": "Pikachu",
+      "type1": "Electric",
+      "type2": "None"
+    }
+
+    {
+      "name": "Beldum" ,
+      "type1": "Steel" ,
+      "type2" : "Psychic" ,
+    }
+  ]
+}
